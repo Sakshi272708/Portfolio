@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(#d89c4d, #8a673a);
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color: rgb(184, 192, 119);
+
+}
+
+/* ABOUT */
+.about {
+  background: linear-gradient(#f2c97c, #b16f13);
+  padding: 60px 20px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 230px;
+  border-radius: 25%;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* EDUCATION */
+.education {
+  background: linear-gradient(#f4d07b, #fdab3f);
+  padding: 50px;
+}
+
+.education ul li {
+  margin-bottom: 15px;
+}
+
+/* SKILLS */
+.skills {
+  background: linear-gradient(#f7d481, #fbac45);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skill-grid {
+  max-width: 900px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skill-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.certification {
+  margin-top: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  background: linear-gradient(#f9da8b, #efa94e);
+  padding: 60px 20px;
+}
+
+.project-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #9c8b61;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.project-card a {
+  color: white;
+  font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+  background: #f28c07;
+  padding: 40px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
